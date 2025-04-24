@@ -6,11 +6,11 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: HOST
-        value: db
+        value: dpg-d054uuadbo4c73bgmsu0-a
       - key: USER
-        value: odoo
+        value: odoodb
       - key: PASSWORD
-        value: odoo
+        value: ogLJI2GKItf9zrhE86AuMGXczy7SweiH
     disk:
       name: odoo-data
       mountPath: /var/lib/odoo
