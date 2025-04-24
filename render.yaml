@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: odoo14
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: HOST
+        value: db
+      - key: USER
+        value: odoo
+      - key: PASSWORD
+        value: odoo
+    disk:
+      name: odoo-data
+      mountPath: /var/lib/odoo
+      sizeGB: 1
